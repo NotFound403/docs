@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <primary-color>#307FFF</primary-color>
+        <header-logo>logo.svg</header-logo>
+        <product-web-url>https://gitee.com/felord/wecom-sdk</product-web-url>
+    </variables>
+    <build-profile instance="hi">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+    <footer>
+        <copyright>Company 2000-2023</copyright>
+        <icp>12345</icp>
+        <social type="twitter" href="https://twitter.com/onwriterside"/>
+        <link href="https://blog.jetbrains.com">Blog</link>
+        <link href="https://slack.jetbrains.com">Slack community</link>
+    </footer>
+</buildprofiles>
