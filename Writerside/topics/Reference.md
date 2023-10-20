@@ -64,8 +64,7 @@ AgentDetails external=DefaultAgent.nativeAgent("企业ID","应用密钥",NativeA
 
 ## WeComTokenCacheable
 
-`WeComTokenCacheable`
-定义企业微信所需要的 [accessToken](https://developer.work.weixin.qq.com/document/path/91039)、 [corpticket](https://developer.work.weixin.qq.com/document/path/90506)
+`WeComTokenCacheable`定义了企业微信所需要的 [accessToken](https://developer.work.weixin.qq.com/document/path/91039)、 [corpticket](https://developer.work.weixin.qq.com/document/path/90506)
 和 [agentticket](https://developer.work.weixin.qq.com/document/path/90506)
 的中继缓存。这里我使用了**Spring
 Cache**
@@ -121,7 +120,7 @@ public static class RedisWeComCacheable implements WeComTokenCacheable {
 ## 回调
 
 企业微信回调是自建系统及时响应企业微信操作事件的重要手段。为了安全起见，企业微信对回调对接进行了一系列定义，这也是企业微信开发的难点之一。`wecom-sdk`对企业微信回调进行了统一封装，屏蔽了验签、解密、异步处理等技术难点，让开发者能够快速地对接企业微信回调。
-> 尽管wecom-sdk简化了回调开发，但是仍然建议开发者认真阅读关于企业微信回调的[相关技术文档](https://developer.work.weixin.qq.com/document/path/90930)。 
+> 尽管[wecom-sdk](https://gitee.com/felord/wecom-sdk)简化了企业微信回调开发，但是仍然建议开发者认真阅读关于企业微信回调的[相关技术文档](https://developer.work.weixin.qq.com/document/path/90930)。 
 
 ### CallbackCrypto
 企业微信回调的处理由`CallbackCrypto`来负责，它提供了一系列的方法用于加密解密、加签验签。我们会在后面的应用环节来具体讲述如何使用它。
