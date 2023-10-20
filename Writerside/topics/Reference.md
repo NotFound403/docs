@@ -65,8 +65,8 @@ AgentDetails external=DefaultAgent.nativeAgent("企业ID","应用密钥",NativeA
 ## WeComTokenCacheable
 
 `WeComTokenCacheable`
-定义企业微信所需要的 [accessToken](https://developer.work.weixin.qq.com/document/path/91039)、 [corpticket](https://developer.work.weixin.qq.com/document/path/90506#%E8%8E%B7%E5%8F%96%E4%BC%81%E4%B8%9A%E7%9A%84jsapi-ticket)
-和 [agentticket](https://developer.work.weixin.qq.com/document/path/90506#%E8%8E%B7%E5%8F%96%E5%BA%94%E7%94%A8%E7%9A%84jsapi-ticket)
+定义企业微信所需要的 [accessToken](https://developer.work.weixin.qq.com/document/path/91039)、 [corpticket](https://developer.work.weixin.qq.com/document/path/90506)
+和 [agentticket](https://developer.work.weixin.qq.com/document/path/90506)
 的中继缓存。这里我使用了**Spring
 Cache**
 实现，你可以根据自己的实际情况选择具体的缓存实现，但是要自行保证中继服务器数据一致性，通常情况下它们的有效期都是<shortcut>
@@ -131,6 +131,6 @@ public static class RedisWeComCacheable implements WeComTokenCacheable {
 
 - `XmlReader` XML解析的抽象，框架默认提供了**XStream**实现，不喜欢的可以重新实现注入。
 - `Consumer<CallbackEventBody>` 消费事件函数，用来处理回调数据。
-- `CallbackSettingsService` 企业微信回调配置检索，用来检索回调的[配置参数](https://developer.work.weixin.qq.com/document/path/90930#2-%E5%9B%9E%E8%B0%83%E6%9C%8D%E5%8A%A1%E9%9C%80%E8%A6%81%E5%93%AA%E4%BA%9B%E9%85%8D%E7%BD%AE)。
+- `CallbackSettingsService` 企业微信回调配置检索，用来检索回调的[配置参数](https://developer.work.weixin.qq.com/document/path/90930)。
 - `ExecutorService` 回调处理线程池，回调数据的处理是异步的，这里默认提供了一个名称前缀为`WECOM-CALLBACK-THREAD-POOL`
   的线程池，你也可以自定义一个符合你实际配置的线程池。
