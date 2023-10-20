@@ -117,3 +117,20 @@ public static class RedisWeComCacheable implements WeComTokenCacheable {
 ```
 
 {collapsible="true"}
+
+## 回调
+
+企业微信回调是自建系统及时响应企业微信操作事件的重要手段。为了安全起见，企业微信对回调对接进行了一系列定义，这也是企业微信开发的难点之一。`wecom-sdk`对企业微信回调进行了统一封装，屏蔽了验签、解密、异步处理等技术难点，让开发者能够快速地对接企业微信回调。
+> 尽管wecom-sdk简化了回调开发，但是仍然建议开发者认真阅读关于企业微信回调的[相关技术文档](https://developer.work.weixin.qq.com/document/path/90930)。 
+
+### CallbackCrypto
+企业微信回调的处理由`CallbackCrypto`来负责，它提供了一系列的方法用于加密解密、加签验签。我们会在后面的应用环节来具体讲述如何使用它。
+
+### CallbackCryptoBuilder
+顾名思义，`CallbackCryptoBuilder`用来构建`CallbackCrypto`。 它有几个关键点：
+
+- `XmlReader` XML解析的抽象，框架默认提供了**XStream**实现，不喜欢的可以重新实现注入。
+- `Consumer<CallbackEventBody>` 消费事件函数，用来处理回调数据。
+- `CallbackSettingsService` 企业微信回调配置检索，用来检索回调的[配置参数](https://developer.work.weixin.qq.com/document/path/90930#2-%E5%9B%9E%E8%B0%83%E6%9C%8D%E5%8A%A1%E9%9C%80%E8%A6%81%E5%93%AA%E4%BA%9B%E9%85%8D%E7%BD%AE)。
+- `ExecutorService` 回调处理线程池，回调数据的处理是异步的，这里默认提供了一个名称前缀为`WECOM-CALLBACK-THREAD-POOL`
+  的线程池，你也可以自定义一个符合你实际配置的线程池。

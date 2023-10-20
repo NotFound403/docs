@@ -13,10 +13,7 @@
         </variables>
     </build-profile>
     <footer>
-        <copyright>Company 2000-2023</copyright>
-        <icp>12345</icp>
-        <social type="twitter" href="https://twitter.com/onwriterside"/>
-        <link href="https://blog.jetbrains.com">Blog</link>
-        <link href="https://slack.jetbrains.com">Slack community</link>
+        <copyright>felord.cn 2000-2023</copyright>
+        <social type="blog" href="https://felord.cn"/>
     </footer>
 </buildprofiles>
