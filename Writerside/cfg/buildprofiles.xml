@@ -13,7 +13,9 @@
         </variables>
     </build-profile>
     <footer>
-        <copyright>felord.cn 2000-2023</copyright>
         <social type="blog" href="https://felord.cn"/>
+        <link href="https://gitee.com/felord/docs/issues">Issues 报告</link>
+        <link href="https://developer.work.weixin.qq.com/document/path/90556">企微文档</link>
+        <copyright>2000-2023 felord.cn</copyright>
     </footer>
 </buildprofiles>

@@ -115,7 +115,7 @@ public static class RedisWeComCacheable implements WeComTokenCacheable {
 }
 ```
 
-{collapsible="true"}
+{collapsible="true" collapsed-title="Spring Cache缓存实现"}
 
 ## 回调
 

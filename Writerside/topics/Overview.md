@@ -19,7 +19,7 @@
     <a target="_blank" href="https://github.com/NotFound403/wecom-sdk">
      	<img alt="" src="https://img.shields.io/github/stars/NotFound403/wecom-sdk?style=social"/>
     </a>    
-    <a target="_blank" href="https://gitee.com/felord/wecom-sdk/stargazers">
+    <a target="_blank" href="https://gitee.com/felord/wecom-sdk/stargazers">·
      	<img alt="" src="https://gitee.com/felord/wecom-sdk/badge/star.svg?theme=white"/>
     </a>
 </p>
