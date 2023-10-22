@@ -2,7 +2,7 @@
 
 在正式使用之前依然建议开发者掌握[wecom-sdk](https://gitee.com/felord/wecom-sdk)的一些设计概念，这非常有助于你定制自己的业务。
 
-## API入口类
+## WorkWeChatApi
 
 `WorkWeChatApi`是企业微信API的唯一入口，推荐注入**Spring IoC**（如果你集成了Spring生态）：
 

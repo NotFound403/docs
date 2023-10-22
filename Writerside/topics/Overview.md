@@ -1,6 +1,6 @@
 # 概述
 
-![wecom-sdk](wechat-sdk.svg){ width=530}
+![wecom-sdk](wechat-sdk.svg){width=530}
 
 
 <p align="center">
@@ -19,8 +19,8 @@
     <a target="_blank" href="https://github.com/NotFound403/wecom-sdk">
      	<img alt="" src="https://img.shields.io/github/stars/NotFound403/wecom-sdk?style=social"/>
     </a>    
-    <a target="_blank" href="https://gitee.com/felord/wecom-sdk/stargazers">·
-     	<img alt="" src="https://gitee.com/felord/wecom-sdk/badge/star.svg?theme=white"/>
+    <a href='https://gitee.com/felord/wecom-sdk/stargazers'>
+        <img src='https://gitee.com/felord/wecom-sdk/badge/star.svg?theme=gray' alt='star'/>
     </a>
 </p>
 
@@ -30,11 +30,12 @@
 实现，是目前开源实现中最完整的Java实现。经过近三年的迭代，目前已经实现了企业微信通讯录管理、上下游、客户管理、微信客服、素材管理、消息推送、企微机器人、身份验证、应用管理、OA办公相关接口，开发人员不需要很高的学习成本就能快速优雅地接入企业微信。
 
 - <img alt="Gitee" height="24" src="gitee.svg" width="24"/>{style=inline}  [ https://gitee.com/felord/wecom-sdk](https://gitee.com/felord/wecom-sdk)
-- <img alt="Github" height="24" src="github.svg" width="24"/>{style=inline}  [ https://gitee.com/felord/wecom-sdk](https://gitee.com/felord/wecom-sdk)
+- <img alt="Github" height="24" src="github.svg" width="24"/>{style=inline}  [ https://github.com/NotFound403/wecom-sdk](https://github.com/NotFound403/wecom-sdk)
 
 {style="none"}
 
-> 如果你感觉这个项目不错，请点击[wecom-sdk](https://gitee.com/felord/wecom-sdk)右上角的⭐以鼓励作者，谢谢🎉。
+> 如果你感觉这个项目不错，请点击[wecom-sdk](https://gitee.com/felord/wecom-sdk)右上角的⭐以鼓励作者，感谢对开源项目的支持🎉。
+> {style="note"}
 
 ## 🔥特性
 
@@ -46,7 +47,15 @@
 - 统一异常处理，企业微信API调用异常统一被WeComException管理
 - 由 SDK 接管 Token 生命周期，开发者无需关心 Token 的管理。
 
-<warning>目前自建应用可轻松适配，服务商、第三方代开发暂不开源。</warning>
+> **注意**
+> 
+> 目前wecom-sdk仅仅支持自建应用，暂不支持服务商、第三方代开发，如需支持可自行支持或联系作者定制。
+> {style="warning"}
+
+## 📱微信扫码加入交流群
+
+![微信扫码入群](contact_me_qr.png){width=380}
+
 
 ## 🏗️API实现进度
 
